@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="pagina1.css" media="screen">
+    <title>Formulário</title>
+</head>
+<link>
+<a href="pagina1.html"><b>Novo Item</b></a> / <a href="pagina2.html">Lista de Itens</a>
+
+<body>
+    <div>
+        <br>
+        <h1 id="titulo">Cadastrar Item</h1>
+    </div>
+
+    <form id="form">
+        <fieldset class="grupo">
+            <div class="campo">
+                <br>
+                <label for="Modelo"><strong>Modelo</strong></label>
+                <input type="text" name="Modelo" id="modelo" required>
+            </div>
+            <div class="campo">
+                <br>
+                <label for="Marca"><strong>Marca</strong></label>
+                <input type="text" name="Marca" id="marca" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="tipo" id="tipo"><strong>Tipo:</strong></label>
+            <select name="Tipo">
+                <option value="TipoSelecionada" selected>Selecione opção</option>
+                <option value="tablet">Tablet</option>
+                <option value="celular">Celular</option>
+                <option value="computador">Computador</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="quant"><strong>Quantidade:</strong></label>
+            <input id="quant" name="quant" class="number" size="1" type="number" value="0" maxlength="10" />
+        </div>
+
+        <div class="campo">
+            <label for="condicao"><strong>Condição:</strong></label>
+            <input type="radio" name="webmaster" value="Novo" /> Novo
+            <input type="radio" name="webmaster" value="Usado" /> Usado
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Diferenciais:</strong></label> <br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="QuadHD">
+                <label for="tecnologia1"> Quad HD</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="5G">
+                <label for="tecnologia2"> 5g</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Bluetooth">
+                <label for="tecnologia3"> Bluetooth</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="WIFI">
+                <label for="tecnologia4"> WIFi</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br><br>
+            <button type="button" onclick="salvarItem()">Cadastrar</button>
+            <input type="reset" name="b2" value="Limpar">
+        </div>
+    </form>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
